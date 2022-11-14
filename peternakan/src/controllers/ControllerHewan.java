@@ -68,16 +68,6 @@ public class ControllerHewan extends Database {
         }
         return false;
     }
-    
-    public boolean checkHewan(int id) throws SQLException {
-        getAll();
-        while (this.value.next()) {
-            if (Integer.parseInt(value.getString("id_hewan")) == id) {
-                return true;
-            }
-        }
-        return false;
-    }
 
     // Print hewan
     public String[][] showHewan() throws SQLException {
